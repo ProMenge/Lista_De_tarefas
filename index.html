@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário jQuery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    
+
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+        <button type="button"> Nova Atividade + </button>
+    </header>
+    <form action="">
+        <h2>Inserir Nova Atividade</h2>
+        <input type="text" required placeholder="titulo da tarefa" name="" id="input-titulo-tarefa">
+        <input type="text" required placeholder="Descrição" name="" id="input-descricao-tarefa">
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="botao-cancelar">Cancelar</button>
+
+    </form>
+
+    <ul>
+        <li>
+            <div class="container">
+                <div class="conteudo-tarefa">
+                    <h3 class="titulo-tarefa">Titulo Tarefa Teste</h3>
+                    <p class="descricao-tarefa">Tarefa Teste 1</p>
+                </div>
+                <button class="botao-excluir"><i class="fas fa-trash-alt"></i></button>
+            </div>
+        </li>
+    </ul>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="teste.js"></script>
+</body>
+
+</html>

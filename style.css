@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header{
+    background-color: #5f27cd;
+    padding: 16px 0;
+    color: #FFF;
+    display: flex;
+    border-bottom: 16px solid #341f97;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button{
+    margin-left: 16px;
+}
+
+form{
+
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+form h2 {
+
+    margin-bottom: 16px;
+}
+
+form h2 {
+
+    margin-bottom: 16px;
+}
+
+input, button{
+
+    padding: 8px;
+}
+
+button{
+
+    background-color: #009432;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* faz com que os itens fiquem em coluna, um abaixo do outro */
+    align-items: center; /* centraliza os itens no eixo transversal (neste caso, horizontalmente) */
+    max-width: 100%;
+    width: 100%;
+    border: none;
+    padding: 20px; /* adiciona um pouco de espaço interno */
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    margin: 10px; /* Adiciona margem ao redor do container de tarefas */
+    border-radius: 8px; /* Bordas arredondadas */
+    background: #f7f7f7; /* Cor de fundo suave */
+    transition: transform 0.2s; /* Transição suave para efeitos de hover */
+}
+
+.container:hover {
+    transform: translateY(-2px); /* Eleva o container ligeiramente ao passar o mouse */
+}
+
+.titulo-tarefa, .descricao-tarefa {
+    width: 100%; /* faz com que cada título e descrição ocupem toda a largura do container */
+    text-align: center; /* centraliza o texto */
+    margin: 5px 0;
+}
+
+#botao-cancelar{
+
+    background-color: red;
+    
+}
+
+.botao-excluir {
+    background-color: red;
+    color: white; /* para melhorar a visibilidade do texto */
+    margin-left: auto; /* empurra o botão para a direita */
+    margin-top: 10px; /* adiciona um espaço acima do botão */
+    border: none; /* remove a borda padrão */
+    cursor: pointer; /* muda o cursor para indicar que é clicável */
+    opacity: 0;
+    border-radius: 4px;
+}
+
+ul li:hover .botao-excluir {
+    opacity: 1; /* Torna visível quando o item da lista é passado pelo mouse */
+}
+
+
+ul {
+    display: flex;
+    flex-direction: column; /* faz os itens da lista ficarem em coluna */
+    width: 100%;
+}
+
+ul li:hover {
+    background-color: #eaeaea; /* Altera a cor de fundo ao passar o mouse */
+}
+
+ul li {
+    width: 100%; /* faz cada item da lista ocupar toda a largura */
+    list-style: none;
+    margin-bottom: 10px; /* adiciona um espaço entre os itens da lista */
+}
+
+
+.conteudo-tarefa {
+    text-align: center;
+    width: 100%;
+}
+
+
+.container:hover .titulo-tarefa,
+.container:hover .descricao-tarefa {
+    text-decoration: line-through; /* adiciona o risco no texto ao passar o mouse */
+}
+
